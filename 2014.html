@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The National Animal Rights Day</title>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/fotorama.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script>
+	      function initialize() {
+	        var map_canvas = document.getElementById('map_canvas');
+	        var map_options = {
+	          center: new google.maps.LatLng(40, -100),
+	          zoom: 4,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        }
+	        var map = new google.maps.Map(map_canvas, map_options)
+	        var myLatlng = new google.maps.LatLng(40.67, -73.94);
+	        var marker = new google.maps.Marker({
+			    position: myLatlng,
+			    map: map,
+			    title:"New York",
+			    url: '2014.html#new_york'
+			});
+			var myLatlng2 = new google.maps.LatLng(34.05, -118.25);
+	        var marker2 = new google.maps.Marker({
+			    position: myLatlng2,
+			    map: map,
+			    title:"Los Angeles",
+			    url: '2014.html#los_angeles'
+			});
+			var myLatlng3 = new google.maps.LatLng(37.7833, -122.4167);
+	        var marker3 = new google.maps.Marker({
+			    position: myLatlng3,
+			    map: map,
+			    title:"San Francisco",
+			    url: '2014.html#san_francisco'
+			});
+			google.maps.event.addListener(marker, 'click', function() {
+		      window.location.href = marker.url;
+		    });
+		    google.maps.event.addListener(marker2, 'click', function() {
+		      window.location.href = marker.url;
+		    });
+		    google.maps.event.addListener(marker3, 'click', function() {
+		      window.location.href = marker.url;
+		    });
+	      }
+
+	      google.maps.event.addDomListener(window, 'load', initialize);
+
+	    </script>
+		<link rel='stylesheet' href='css/style.css' type='text/css'> 
+		<link rel='stylesheet' href='css/fotorama.css' type='text/css'>  
+	</head>
+	<body>
+		<div id='main_box'>
+			<h1><span style='font-size: .75em;'>The</span> <span class='blue'>N</span>ational <span class='blue'>A</span>nimal <span class='blue'>R</span>ights <span class='blue'>D</span>ay</h1>
+			<h2>Commemorate. Educate. Celebrate.</h2>
+			<div id = 'social'>
+				<a href='https://www.facebook.com/pages/The-National-Animal-Rights-Day-US/388042877923967' target='blank'>
+					<img src='img/fb.jpg'>
+				</a>
+				<a href='https://twitter.com/OPTT_NARD' target='blank'>
+					<img src='img/twitter.png'>
+				</a>
+				<a href='http://www.youtube.com/user/OurPlanetTheirsToo' target='blank'>
+					<img src='img/yt.png'>
+				</a>
+			</div>
+			<ul id='nav'>
+				<li>
+					<a href='index.html'>
+						Home
+					<a>
+				</li> 
+				<li>
+					<a href='why.html'>
+						Why
+					</a>
+				</li>
+				<li class='active'>
+					<a href='events.html'>
+						Our Events
+					</a>
+				</li>
+				<li>
+					<a href='get_involved.html'>
+						Get Involved
+					</a>
+				</li>
+				<li>
+					<a href='resources.html'>
+						Resources
+					</a>
+				</li>
+			</ul>
+			<div id='event_img_box'>
+				<div class='img_container'>
+					<a href='2011.html'>
+						<img src='img/events/2011.jpg'>
+					</a>
+					<div class='caption'>
+						NARD 1 - 2011
+					</div>
+				</div>
+				<div class="img_container">
+					<a href='2012.html'>
+						<img src='img/events/2012.jpg'>
+					</a>
+					<div class='caption'>
+						NARD 2 - 2012
+					</div>
+				</div>
+				<div class='img_container'>
+					<a href='2013.html'>
+						<img src='img/events/2013.jpg'>
+					</a>
+					<div class='caption'>
+						NARD 3 - 2013
+					</div>
+				</div>
+				<div class='img_container'>
+					<a href='2014.html'>
+						<img src='img/events/2014.jpg'>
+					</a>
+					<div class='caption active'>
+						NARD 4 - 2014
+					</div>
+				</div>
+				<div class='img_container'>
+					<a href='events.html'>
+						<img src='img/events/2015.jpg'>
+					</a>
+					<div class='caption'>
+						NARD 5 - 2015
+					</div>
+				</div>
+
+			</div>
+			<div id='map_canvas'>
+			</div>
+			<a name='los_angeles'></a>
+			<div class='event_info_box'>
+<h3><span class='blueUnderline'>Los Angeles</span></h3>
+				<div class="fotorama" align="center" data-nav="thumbs">
+					
+					<img src="img/la_2014_slider/flyer.jpg">
+					<a href='http://youtu.be/9L8G54PctF8'>
+					<img src="img/la_2014_slider/vid_thumb1.jpg" width="820" height="460"></a>
+					<!--<a href='http://youtu.be/mO9biu9zA5o'>
+					<img src="img/la_2014_slider/vid_thumb2.jpg" width="820" height="460"></a>-->
+					<a href='http://youtu.be/WvqS_QJ3Oqw'>
+					<img src="img/la_2014_slider/vid_thumb3.jpg" width="820" height="460"></a>
+					<img src="img/la_2014_slider/1.jpg">
+					<img src="img/la_2014_slider/2.jpg">
+					<img src="img/la_2014_slider/3.jpg">
+					<img src="img/la_2014_slider/4.jpg">
+					<img src="img/la_2014_slider/5.jpg">
+					<img src="img/la_2014_slider/6.jpg">
+					<img src="img/la_2014_slider/7.jpg">
+					<img src="img/la_2014_slider/8.jpg">
+					<img src="img/la_2014_slider/9.jpg">
+					<img src="img/la_2014_slider/10.jpg">
+					<img src="img/la_2014_slider/11.jpg">
+					<img src="img/la_2014_slider/12.jpg">
+					<img src="img/la_2014_slider/13.jpg">
+					<img src="img/la_2014_slider/14.jpg">
+					<img src="img/la_2014_slider/15.jpg">
+					<img src="img/la_2014_slider/16.jpg">
+					<img src="img/la_2014_slider/17.jpg">
+					<img src="img/la_2014_slider/18.jpg">
+					<img src="img/la_2014_slider/19.jpg">
+					<img src="img/la_2014_slider/20.jpg">
+					<img src="img/la_2014_slider/21.jpg">
+					<img src="img/la_2014_slider/22.jpg">
+					<img src="img/la_2014_slider/23.jpg">
+					<img src="img/la_2014_slider/24.jpg">
+					<img src="img/la_2014_slider/25.jpg">
+					<img src="img/la_2014_slider/26.jpg">
+					<img src="img/la_2014_slider/27.jpg">
+					<img src="img/la_2014_slider/28.jpg">
+					<img src="img/la_2014_slider/29.jpg">
+					<img src="img/la_2014_slider/30.jpg">
+					<img src="img/la_2014_slider/31.jpg">
+					<img src="img/la_2014_slider/32.jpg">
+					<img src="img/la_2014_slider/33.jpg">
+					<img src="img/la_2014_slider/34.jpg">
+					<img src="img/la_2014_slider/35.jpg">
+					<img src="img/la_2014_slider/36.jpg">
+					<img src="img/la_2014_slider/37.jpg">
+					<img src="img/la_2014_slider/38.jpg">
+					
+					
+				</div>
+<center>
+<p>The 4th National Animal Rights Day (NARD4) event in Los Angeles took place on <b>Saturday, May 31</b>,</br> from 12:00 noon - 5:00 pm, on the Santa Monica beach by the Pier. </br> 
+</br>Activists and many organizations and groups came together to give a voice to the billions of animals who die in this country every year by human hands. We commemorated them, and educated the public about how they can help stop the dying, and support life, for humans, animals and the planet!</br></p>
+				</center>
+<!--<p>&nbsp;&nbsp;<u>The day's schedule:</u></br>
+&nbsp;&nbsp;12:00 pm: Opening Ceremony</br>
+&nbsp;&nbsp;12:45 pm: Reading and Signing the Declaration of Animal Rights</br>
+&nbsp;&nbsp;1:30 - 5:00 pm: Booths by various Animal Rights groups, displays, vegan food, speakers, artists, and more</br></p>-->
+
+	<h4><span class='blueThinUnderline'>Featuring</span></h4>
+				<div class='feature_left'>
+					<div class='category_left'>
+						Organizations
+					</div>
+					<div class='text_right'>
+						<p><a href='http://www.ourplanettheirstoo.org/'><b>Our Planet. Theirs Too.</b></a></p>
+						<p><a href='http://www.greenpeace.org/usa/en/'><b>Greenpeace</b></a></p>
+					<p><a href='http://www.aprl.org/'><b>Animal Protection and Rescue League</b></a></p>
+					<p><a href='http://www.ad-international.org/'><b>Animal Defenders International</b></a></p>
+						<p><a href='http://www.beaglefreedomproject.org/'><b>Beagle Freedom Project</b></a></p>
+						<p><a href='http://www.thebunnyalliance.com/‘><b>The Bunny Alliance</b></a></p>
+					<p><a href='http://www.expandanimalrightsnow.org/'><b>Expand Animal Rights Now</b></a></p>
+						<p><a href='http://www.farmusa.org/'><b>Farm Animal Rights Movement</b></a></p>
+						<p><a href='http://www.idausa.org/'><b>In Defense of Animals</b></a></p>
+						<p><a href='http://www.mercyforanimals.org'><b>Mercy for Animals</b></a></p>
+						<p><a href='http://www.peta.org/'><b>PETA</b></a></p>
+						<p><a href='http://www.seashepherd.org/'><b>Sea Shepherd California</b></a></p>
+						<p><a href='http://www.veganoutreach.org/'><b>Vegan Outreach</b></a></p>
+						<p><a href='http://www.farmsanctuary.org'><b>Farm Sanctuary</b></a></p>
+						<p><a href='http://www.peacefulpetsaquamation.com'><b>Peaceful Pets Aquamation</b></a></p>
+						
+
+
+					</div>
+					<div class='category_left'>
+						Speakers
+					</div>
+					<div class='text_right'>
+					<p>Author and activist <a href='http://www.thankingthemonkey.com/'><b>Karen Dawn</b></a></p>
+					<p>Young activist <b>Max-Rose Tyler</b></p>
+					<p>Young activist <b>Chelsea Pinkham</b></p>
+					<p>Martial Artist <a href='http://www.robstotalhealth.com/'><b>Robert Margolin</b></a></p>
+					<p>Igualdad Animal founder <a href='http://www.igualdadanimal.org'><b>Sharon Nunez Gough</b></a></p>
+					
+				</div>
+				</div>
+
+				<div class='feature_right'>
+					<div class='category_right'>
+						Other
+					</div>
+					<div class='text_left'>
+					<p>Yoga / Reiki Master <a href='http://www.charlottecressey.com/'><b>Charlotte Cressey</b></a></p>			
+					<p>Reiki Master <a href='http://www.ahimsalifecoaching.com/aboutsteve/'><b>Steven Todd Smith</b></a></p>			
+					</div>
+
+					<div class='category_right'>
+						Music
+					</div>
+					<div class='text_left'>
+	 					
+<p><b>Compassionate Children's Chorus</b></p>
+<p>Singer <a href='http://www.joygraysen.com/'><b>Joy Graysen</b></a></p>
+<p>Singer <a href='http://www.annabellalwin.com'><b>Annabella Lwin</b></a></p>
+<p>Singer <a href='http://nomiabadi.com/'><b>Nomi Abadi</b></a></p>
+<p>Singer <a href='https://myspace.com/niloosongs/'><b>Niloo Vegiloo</b></a></p>
+<p>Spoken word artist <a href='http://www.reverbnation.com/seanraymondhill/'><b>Sean Hill</b></a></p>
+<p>Classical guitarist <a href='https://myspace.com/_musicteacher_'><b>Ramin Saber</b></a></p>
+<p>Guitarist <b>Tim Rusmisel</b></p>
+						
+						
+
+					</div>
+					<div class='category_right'>
+						Food
+					</div>
+					<div class='text_left'>
+					<p>Vegan drinks from <a href='http://www.sodeliciousdairyfree.com/'><b>So Delicious</b></a></p>
+					<p>Vegan drinks from <a href='http://www.teeccino.com/'><b>Teeccino</b></a></p>
+						<p>Vegan 'meat' from <a href='http://beyondmeat.com'><b>Beyond Meat</b></a></p>
+						<p>Vegan 'meat' from <a href='http://www.tofurky.com/'><b>Tofurky</b></a></p>
+					<p>Vegan salads from <a href='https://www.facebook.com/veganheights/'><b>Vegan Heights</b></a></p>
+					<p>Vegan 'Meat' from <a href='http://fieldroast.com/'><b>Field Roast</b></a></p>
+						<p>Vegan popcorn from <a href='http://earthbalancenatural.com/'><b>Earth Balance</b></a></p>
+
+
+					</div>
+					</div>
+</br><p>&nbsp;&nbsp;All FREE!</br></br>
+&nbsp;&nbsp;To RSVP: <a href='https://www.facebook.com/events/214815605392494/' class='blue_link' Target='blank'>NARD LA 2014 Facebook Event Page</a>
+</p>		
+
+			</div>
+
+			<a name='san_francisco'></a>
+			<div class='event_info_box'>
+<h3><span class='blueUnderline'>San Francisco</span></h3>
+
+<div class="fotorama" align="center" data-nav="thumbs">
+					
+					<img src="img/sf_2014_slider/flyer.jpg">
+					<a href='http://youtu.be/2ImOVJabprU'>
+					<img src="img/sf_2014_slider/vid_thumb1.jpg" width="820" height="460"></a>
+					<img src="img/sf_2014_slider/1.jpg">
+					<img src="img/sf_2014_slider/2.jpg">
+					<img src="img/sf_2014_slider/3.jpg">
+					<img src="img/sf_2014_slider/4.jpg">
+					<img src="img/sf_2014_slider/5.jpg">
+					<img src="img/sf_2014_slider/6.jpg">
+					<img src="img/sf_2014_slider/7.jpg">
+					<img src="img/sf_2014_slider/8.jpg">
+					<img src="img/sf_2014_slider/9.jpg">
+					<img src="img/sf_2014_slider/10.jpg">
+					<img src="img/sf_2014_slider/11.jpg">
+					<img src="img/sf_2014_slider/12.jpg">
+					<img src="img/sf_2014_slider/13.jpg">
+					<img src="img/sf_2014_slider/14.jpg">
+					<img src="img/sf_2014_slider/15.jpg">
+					<img src="img/sf_2014_slider/16.jpg">
+					<img src="img/sf_2014_slider/17.jpg">
+					<img src="img/sf_2014_slider/18.jpg">
+					<img src="img/sf_2014_slider/19.jpg">
+					<img src="img/sf_2014_slider/20.jpg">
+					<img src="img/sf_2014_slider/21.jpg">
+					<img src="img/sf_2014_slider/22.jpg">
+					<img src="img/sf_2014_slider/23.jpg">
+					<img src="img/sf_2014_slider/24.jpg">
+					<img src="img/sf_2014_slider/25.jpg">
+					<img src="img/sf_2014_slider/26.jpg">
+					<img src="img/sf_2014_slider/27.jpg">
+					<img src="img/sf_2014_slider/28.jpg">
+					<img src="img/sf_2014_slider/29.jpg">
+					<img src="img/sf_2014_slider/30.jpg">
+					<img src="img/sf_2014_slider/31.jpg">
+					<img src="img/sf_2014_slider/32.jpg">
+					<img src="img/sf_2014_slider/33.jpg">
+					<img src="img/sf_2014_slider/34.jpg">
+					<img src="img/sf_2014_slider/35.jpg">
+					<img src="img/sf_2014_slider/36.jpg">
+					<img src="img/sf_2014_slider/37.jpg">
+					<img src="img/sf_2014_slider/38.jpg">
+					
+					
+				</div>
+
+<center>
+<p>The 4th National Animal Rights Day (NARD4) was San Francisco's first year to participate in NARD!</br> The event took place on <b>Saturday, May 31</b>, from 11:00 am - 3:00 pm, at the Civic Center Plaza.</br> 
+</br> Activists from different organizations and groups came together for every animal on this Earth. We commemorated the animals, and educated the public about how they can help animals the most.</br></p>
+</center>
+<!--<p>&nbsp;&nbsp;<u>The day's schedule:</u></br>
+&nbsp;&nbsp;11:00 am: Opening Ceremony</br>
+&nbsp;&nbsp;11:30 am: Meditation Transition</br>
+&nbsp;&nbsp;11:45 am: Reading and Signing the Declaration of Animal Rights</br>
+&nbsp;&nbsp;Noon - 3:00 pm: Info tables by various Animal Rights groups, sanctuaries and rescues in our area</br>
+
+</p>-->
+		
+	<h4><span class='blueThinUnderline'>Featuring</span></h4>
+				<div class='feature_left'>
+					<div class='category_left'>
+						Organizations
+					</div>
+					<div class='text_right'>
+						<p><a href='http://www.ourplanettheirstoo.org/'><b>Our Planet. Theirs Too.</b></a></p>
+						<p><a href='http://www.animalfreesixflags.org/'><b>Citizens for an Animal-free Six Flags</b></a></p>
+						<p><a href='http://www.beaglefreedomproject.org/'><b>Beagle Freedom Project</b></a></p>
+					<p><a href='http://www.directactioneverywhere.org/'><b>Direct Action Everywhere</b></a></p>
+						<p><a href='http://www.duoduoproject.org/'><b>Duo Duo Animal Welfare Project</b></a></p>
+					<p><a href='http://www.ffacoalition.org/'><b>Factory Farming Awareness Coalition</b></a></p>
+						<p><a href='http://www.harvesthomesanctuary.org/'><b>Harvest Home Sanctuary</b></a></p>
+						<p><a href='http://www.thehumaneleague.com/'><b>The Humane League</b></a></p>
+					<p><a href='http://www.humanitythrougheducation.com/'><b>Humanity Through Education</b></a></p>
+					
+
+
+					</div>
+					
+				</div>
+				<div class='feature_right'>
+					<div class='category_right'>
+						Organizations
+					</div>
+					<div class='text_left'>
+						
+					<p><a href='http://www.facebook.com/events/494618293994379/'><b>March for Elephants</b></a></p>
+						<p><a href='http://www.marinvoicesforanimals.org/'><b>Marin Voices for Animals</b></a></p>
+						<p><a href='http://www.pigeonrescue.org/'><b>MickaCoo Pigeon & Dove Rescue</b></a></p>
+						<p><a href='http://www.peta.org/'><b>PETA</b></a></p>
+						<p><a href='http://www.preetirangsanctuary.org/'><b>Preetirang Sanctuary</b></a></p>
+					<p><a href='http://www.sfvs.org/'><b>San Francisco Vegetarian Society</b></a></p>
+						<p><a href='http://www.saveabunny.org/'><b>Save A Bunny</b></a></p>
+					<p><a href='http://www.savethefrogs.com/'><b>Save the Frogs</b></a></p>
+						<p><a href='http://www.facebook.com/vegansofdavis/'><b>Vegans of Davis</b></a></p>
+						
+
+					</div>
+					
+				</div>	
+<p>
+&nbsp;&nbsp;FREE RAFFLES EVERY 15 MINS!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WIN GIFT CERTIFICATES!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All FREE!</br></br>
+&nbsp;&nbsp;To RSVP: <a href='https://www.facebook.com/events/247726788743277/' class='blue_link' Target='blank'>NARD SF 2014 Facebook Event Page</a></p>
+			</div>
+			<a name='new_york'></a>
+			<div class='event_info_box'>
+<h3><span class='blueUnderline'>New York</span></h3>
+
+<div class="fotorama" align="center" data-nav="thumbs">
+					<img src="img/ny_2014_slider/flyer.jpg">
+					<a href='http://www.youtube.com/watch?v=46pwxFddGd4&feature=share&list=UUNtVdSr6CAsY-PQernccJVA'>
+					<img src="img/ny_2014_slider/vid_thumb1.jpg" width="820" height="460"></a>
+					<img src="img/ny_2014_slider/1.jpg">
+					<img src="img/ny_2014_slider/2.jpg">
+					<img src="img/ny_2014_slider/3.jpg">
+					<img src="img/ny_2014_slider/4.jpg">
+					<img src="img/ny_2014_slider/5.jpg">
+					<img src="img/ny_2014_slider/6.jpg">
+					<img src="img/ny_2014_slider/7.jpg">
+					<img src="img/ny_2014_slider/8.jpg">
+					<img src="img/ny_2014_slider/9.jpg">
+					<img src="img/ny_2014_slider/10.jpg">
+					<img src="img/ny_2014_slider/11.jpg">
+					<img src="img/ny_2014_slider/12.jpg">
+					<img src="img/ny_2014_slider/13.jpg">
+					<img src="img/ny_2014_slider/14.jpg">
+					<img src="img/ny_2014_slider/15.jpg">
+					<img src="img/ny_2014_slider/16.jpg">
+					<img src="img/ny_2014_slider/17.jpg">
+					<img src="img/ny_2014_slider/18.jpg">
+					<img src="img/ny_2014_slider/19.jpg">
+					<img src="img/ny_2014_slider/20.jpg">
+					<img src="img/ny_2014_slider/21.jpg">
+					<img src="img/ny_2014_slider/22.jpg">
+					<img src="img/ny_2014_slider/23.jpg">
+					<img src="img/ny_2014_slider/24.jpg">
+					<img src="img/ny_2014_slider/25.jpg">
+					
+					
+				</div>
+<center>
+<p>The 4th National Animal Rights Day (NARD4) event in New York City took place on <b>Sunday, June 8</b>,</br> from 12:00 noon - 5:00 pm, at the North Plaza of Union Square. </br> 
+</br>Activists and groups came together to give a voice to the billions of animals who are abused and killed in this country every year. We commemorated them, and educated the public about how they can help stop this horror, and support life, for humans, animals and the planet!</br></p>
+				</center>
+<!--<p>&nbsp;&nbsp;<u>The day's schedule:</u></br>
+&nbsp;&nbsp;12:00 pm: Opening Ceremony</br>
+&nbsp;&nbsp;12:45 pm: Reading and Signing the Declaration of Animal Rights</br>
+&nbsp;&nbsp;1:30 - 5:00 pm: Info tables by various Animal Rights groups, vegan food, speakers, artists, and more</br></p>-->
+
+<h4><span class='blueThinUnderline'>Featuring</span></h4>
+				<div class='feature_left'>
+					<div class='category_left'>
+						Organizations
+					</div>
+					<div class='text_right'>
+					<p><a href='http://www.ourplanettheirstoo.org/'><b>Our Planet. Theirs Too.</b></a></p>
+					<p><a href='http://www.upc-online.org'><b>United Poultry Concerns</b></a></p>
+					<p><a href='http://www.endchickensaskaporos.com'><b>Alliance to End Chickens as Kaporos</b></a></p>
+					<p><a href='http://banhdc.org'><b>Coalition to Ban Horse-Drawn Carriages</b></a></p>
+					<p><a href='http://www.nyfarmanimalsave.org'><b>NY Farm Animal Save</b></a></p>
+					<p><a href='http://www.fishfeel.org'><b>Fish Feel</b></a></p>
+					<p><a href='http://www.evolveforanimals.org'><b>Evolve For Animals</b></a></p>
+					<p><a href='http://www.petcremationny.com'><b>All City Pet Cremation</b></a></p>
+
+					</div>
+					<div class='category_left'>
+						Food
+					</div>
+					<div class='text_right'>
+					
+					<p>Vegan hotdogs from <a href='http://www.yeahdawgvegan.com'><b>Yeah Dawg</b></a></p>
+					<p>Vegan food from <a href='http://www.spreadvegan.com/'><b>The V-Spot</b></a></p>
+					<p>Vegan food from <a href='http://soulkofa.co'><b>Soulkofa</b></a></p>
+					<p>Vegan food from <a href='http://www.lovinghut.us/'><b>The Loving Hut</b></a></p>
+					<p>Vegan 'meat' from <a href='http://www.tofurky.com/'><b>Tofurky</b></a></p>
+					<p>Vegan icecream from <a href='http://sodeliciousdairyfree.com/'><b>So Delicious</b></a></p>
+					<p>Vegan icecream from <a href='http://alchemycreamery.com/'><b>Alchemy Creamery</b></a></p>
+					
+
+</div>
+					
+					
+				</div>
+				<div class='feature_right'>
+					
+					
+					<div class='category_right'>
+						Performers
+					</div>
+					<div class='text_left'>
+					<p><a href='https://sites.google.com/site/honeylabronx/'><b>Honey LaBronx</b></a></p>
+					<p>Opera Singer <a href='http://www.midamerica-music.com/soloists/bio/190'><b>Kathryn Wieckhorst</b></a></p>
+					<p><b>Maca and Ricky</b></p>
+	 				<p><a href='http://briangari.com'><b>Brian Gari</b></a></p>
+					<p><b>Raffaella Ciavatta</b></p>
+
+
+					</div>
+
+					<div class='category_right'>
+						Speakers
+					</div>
+					<div class='text_left'>
+					
+				<p>Bodybuilder <a href='http://mindyvegan.com'><b>Mindy Collette</b></a></p>
+				<p>Author and Activist <a href='http://mickeyzvegan.wordpress.com'><b>Mickey Z.</b></a></p>
+				<p>Actor, magician and activist <a href='http://ericwalton.com'><b>Eric Walton</b></a></p>
+				<p>Activist and animal rescuer <b>Mike Stura</b></a></p>
+				<p>Fish Feel: <a href='http://www.fishfeel.org/bod.php'><b>Mary Finelli</b></a></p>
+				<p>The Coalition to  Ban Horse Drawn carriages: <a href='http://www.onegreenplanet.org/author/Elizabeth_Forel'><b>Elizabeth Forel</b></a></p>
+				<p>Jewish Vegetarians of North America: <a href='http://jewishveg.com'><b>Richard Schwartz </b></a></p>
+				<p>Doctor <b>Dona Eunoia, M.D.</b></p>
+				<p>Nurse <b>Tiana Sheree King</b></p>
+				<p>Young activist <b>Rose</b></p>
+					
+					</div>
+
+</div>
+
+
+</br><p>&nbsp;&nbsp;All FREE!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFFLE PRIZES!</br></br>
+&nbsp;&nbsp;To RSVP: <a href='https://www.facebook.com/events/435892406556468/' class='blue_link' Target='blank'>NARD NYC 2014 Facebook Event Page</a>
+</p>		
+				
+			</div>
+
+		</div>
+		<div id = 'copyright'>&copy; 2014. All rights to the contents of this website are reserved to <a href='http://www.ourplanettheirstoo.org/' class='blue_link' Target='blank'><b>Our Planet. Theirs Too.</b></a> Site design by Chris Bolton and David Kong.</div>
+	</body>
+</html>
