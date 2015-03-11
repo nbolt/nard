@@ -19,14 +19,14 @@
 			    position: myLatlng,
 			    map: map,
 			    title:"New York",
-			    url: 'events.html#new_york'
+			    url: '2013.html#new_york'
 			});
 			var myLatlng2 = new google.maps.LatLng(34.05, -118.25);
 	        var marker2 = new google.maps.Marker({
 			    position: myLatlng2,
 			    map: map,
 			    title:"Los Angeles",
-			    url: 'events.html#los_angeles'
+			    url: '2013.html#los_angeles'
 			});
 			google.maps.event.addListener(marker, 'click', function() {
 		      window.location.href = marker.url;
@@ -83,35 +83,39 @@
 				<a href='http://www.youtube.com/user/OurPlanetTheirsToo' target='blank'>
 					<img src='img/yt.png'>
 				</a>
+				<a href='http://instagram.com/optt_nard' target='blank'>
+					<img src='img/instagram.jpg'>
+				</a>
 			</div>
 			<ul id='nav'>
 				<li>
 					<a href='index.html'>
 						Home
 					<a>
-				</li> 
-				<li>
+				</li 
+				><li>
 					<a href='why.html'>
 						Why
 					</a>
-				</li>
-				<li class='active'>
+				</li
+				><li class='active'>
 					<a href='events.html'>
 						Our Events
 					</a>
-				</li>
-				<li>
+				</li
+				><li>
 					<a href='get_involved.html'>
 						Get Involved
 					</a>
-				</li>
-				<li>
+				</li
+				><li>
 					<a href='resources.html'>
 						Resources
 					</a>
 				</li>
 			</ul>
 			<div id='event_img_box'>
+				<div class='containers'>
 				<div class='img_container'>
 					<a href='2011.html'>
 						<img src='img/events/2011.jpg'>
@@ -119,32 +123,32 @@
 					<div class='caption'>
 						NARD 1 - 2011
 					</div>
-				</div>
-				<div class="img_container">
+				</div
+				><div class="img_container">
 					<a href='2012.html'>
 						<img src='img/events/2012.jpg'>
 					</a>
 					<div class='caption'>
 						NARD 2 - 2012
 					</div>
-				</div>
-				<div class='img_container'>
+				</div
+				><div class='img_container'>
 					<a href='2013.html'>
 						<img src='img/events/2013.jpg'>
 					</a>
 					<div class='caption active'>
 						NARD 3 - 2013
 					</div>
-				</div>
-				<div class='img_container'>
+				</div
+				><div class='img_container'>
 					<a href='2014.html'>
 						<img src='img/events/2014.jpg'>
 					</a>
 					<div class='caption'>
 						NARD 4 - 2014
 					</div>
-				</div>
-				<div class='img_container'>
+				</div
+				><div class='img_container'>
 					<a href='events.html'>
 						<img src='img/events/2015.jpg'>
 					</a>
@@ -152,11 +156,11 @@
 						NARD 5 - 2015
 					</div>
 				</div>
-			</div>
+			</div></div>
 			<div id='map_canvas'>
 			</div>
 			<a name='los_angeles'></a>
-			<div class='event_info_box'>	
+			<div class='event_info_box' id='los_angeles'>	
 <h3><span class='blueUnderline'>Los Angeles</span></h3>
 				<div class="fotorama" align="center" data-nav="none">
 					
@@ -324,7 +328,7 @@
 				</div>
 			</div>
 			<a name='new_york'></a>
-			<div class='event_info_box'>
+			<div class='event_info_box' id='new_york'>
 <h3><span class='blueUnderline'>New York</span></h3>
 				<div class="fotorama" align="center" width="820" data-nav="thumbs">
 					<img src="img/ny_2013_slider/flyer.jpg">
