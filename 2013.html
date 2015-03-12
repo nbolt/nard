@@ -11,7 +11,11 @@
 	        var map_options = {
 	          center: new google.maps.LatLng(40, -100),
 	          zoom: 4,
-	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	          mapTypeId: google.maps.MapTypeId.ROADMAP,
+	          draggable: false,
+    				scrollwheel: false,
+   					panControl: false,
+   					disableDefaultUI: true
 	        }
 	        var map = new google.maps.Map(map_canvas, map_options)
 	        var myLatlng = new google.maps.LatLng(40.67, -73.94);
@@ -19,14 +23,16 @@
 			    position: myLatlng,
 			    map: map,
 			    title:"New York",
-			    url: '2013.html#new_york'
+			    url: '2013.html#new_york',
+			    icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
 			});
 			var myLatlng2 = new google.maps.LatLng(34.05, -118.25);
 	        var marker2 = new google.maps.Marker({
 			    position: myLatlng2,
 			    map: map,
 			    title:"Los Angeles",
-			    url: '2013.html#los_angeles'
+			    url: '2013.html#los_angeles',
+			    icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
 			});
 			google.maps.event.addListener(marker, 'click', function() {
 		      window.location.href = marker.url;
